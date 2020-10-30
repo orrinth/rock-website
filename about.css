@@ -1,0 +1,70 @@
+main {
+    padding-bottom: 10rem;
+}
+
+img {
+    border: 5px solid white;
+    border-radius: 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 10rem;
+    width: 40rem;
+    height: 30rem;
+    display: block;
+}
+
+p {
+    width: 35rem;
+    margin-bottom: 2rem;
+}
+
+.float {
+    margin-top: 1rem;
+}
+
+.float a {
+    color: white;
+}
+
+@media (max-width: 1250px) {
+    img {
+        width: 35rem;
+        height: 25rem;
+        top: 12rem;
+    }
+}
+
+@media (max-width: 1180px) {
+    html, body {
+        text-align: center;
+    }
+    img {
+        position: static;
+        width: 30rem;
+        height: 20rem;
+        margin: 0 auto;
+    }
+
+    p {
+        width: 34rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding-bottom: 15rem;
+    }
+    
+    img {
+        width: 25rem;
+        height: 15rem;
+
+    }
+    
+    p {
+        width: 25rem;
+    }
+}
