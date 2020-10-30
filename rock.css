@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&family=Teko&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+html, body {
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/rock1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: coral;
+    height: 100%;
+    overflow: visible;
+
+}
+
+nav {
+    width: 100%;
+    height: 6rem;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 5px 50px 1px black;
+}
+
+nav #logo {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    font-size: 4rem;
+    font-style: normal;
+    margin-left: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    
+}
+
+nav .logo i {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 1rem;
+    font-size: 3.5rem;
+}
+
+nav #nav-links {
+    background: #333;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Teko', sans-serif;
+    height: auto;
+}
+
+nav #nav-links a {
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    display: inline-block;
+    box-sizing: border-box;
+    transform: scale(1);
+    transition: color 0.2s ease-out, transform 0.2s ease-out;
+    height: auto;
+}
+
+nav #nav-links a:hover {
+    background: none;
+    color: rgb(250, 170, 141);
+    transform: scale(1.2);
+}
+
+nav #nav-links a.current {
+    color: coral;
+}
+
+nav .burger {
+    margin-right: 1rem;
+    display: none;
+    cursor: pointer;
+}
+
+nav .burger .line1, .line2, .line3 {
+    background: white;
+    width: 2rem;
+    height: calc(1rem / 2.5);
+    margin: calc(1rem / 2.5);
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+section {
+    height: 50rem;
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+}
+
+footer {
+    width: 100%;
+    min-height: 6rem;
+    background: #333;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+footer #footer-link {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+footer #footer-cr {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+footer .footer-icons {
+    margin: 1rem;
+}
+
+footer i {
+    font-size: 2.5rem;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+footer i:hover {
+    color: #333;
+    background: coral;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        box-shadow: 0px 5px 50px 1px black;
+    }
+
+    nav #nav-links {
+        display: none;
+        width: 100%;
+        position: absolute;
+        flex-direction: column;
+        top: 4.8rem;
+        left: 0;
+        z-index: 5; 
+        margin: 0;
+        
+    }
+    
+    nav #nav-links a {
+        display: block;
+        background: rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid white;
+        text-align: center;
+        transform: none;
+        margin: 0;
+        width: 100%;
+    }
+    
+    nav #nav-links a:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: none;
+    }
+
+    nav .burger {
+        display: block;
+    }
+}
