@@ -1,0 +1,103 @@
+
+section#intro h2 {
+    margin-bottom: 2rem;
+}
+
+section#intro p {
+    max-width: 100%;
+    width: 40rem;
+    height: 15rem;
+    margin: 0;
+    text-align: left;
+    line-height: 1.5;
+}
+
+section#intro .top-buttons h5 {
+    display: inline-block;
+    margin: 0 2rem;
+}
+
+section#intro .top-buttons button, 
+section#intro .bottom-button button {
+    color: white;
+    width: 36rem;
+    display: block;
+    height: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    background: rgba(0,0,0,0);
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-property: background, color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+}
+
+section#intro .top-buttons a, 
+section#intro .bottom-button a {
+    text-decoration: none;
+}
+
+section#intro .top-buttons button {
+    margin-bottom: 0.8rem;
+}
+
+section#intro .bottom-button button {
+    margin-top: 1rem;
+}
+
+
+section#intro .bottom-button hr {
+    display: inline-block;
+    width: 16.5rem;
+    height: 1px;
+    margin-bottom: 5px;
+    border: none;
+    background: white;
+}
+
+section#intro .bottom-button h5 {
+    display: inline-block;
+}
+
+section#intro button:hover {
+    background: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+@media (max-width: 610px) {
+    section#intro h2 {
+        text-align: center;
+    }
+    
+    section#intro p {
+        text-align: center;
+        width: 100%;
+        max-height: 8rem;
+        margin-bottom: 12rem;
+    }
+
+    section#intro .top-buttons button {
+        width: 100%;
+        display: block;
+        margin-bottom: 1rem;
+    }
+    
+    section#intro .top-buttons h5 {
+        display: none;
+    }
+    
+    section#intro .bottom-button button {
+        width: 100%;
+        display: block;
+    }
+    
+    section#intro .bottom-button hr {
+        display: none;
+    }
+    
+    section#intro .bottom-button h5 {
+        display: none;
+    }
+}
