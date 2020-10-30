@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Orrin">
+        <meta name="description" content="Form for Rocks">
+        <meta name="keywords" content="Form">
+        <title>Rocks | More</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" 
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/rock.css">
+        <link rel="stylesheet" href="styles/more.css">
+        <script src="scripts/rock.js" defer></script>
+    </head>
+    <body>
+        <nav id="top">
+            <a href="index.html" id="logo"><i class="fas fa-mountain"></i>Rocks</a>
+
+            <ul id="nav-links">
+                <li><a href="index.html" title="Home" target="_self">Home</a></li>
+                <li><a href="facts.html" title="Facts" target="_self">Facts</a></li>
+                <li><a href="about.html" title="About" target="_self">About</a></li>
+                <li><a href="more.html" title="More" target="_self" class="current">More</a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <main>
+            <form>
+                <h1>Rock Form</h1>
+                <section class="name">
+                    <label for="user-name">Name:</label>
+                    <input type="text" id="user-name" placeholder="Enter name here...">
+                </section>
+
+                <section class="email">
+                    <label for="user-email">Email:</label>
+                    <input type="email" id="user-email" placeholder="someone@email.com">
+                </section>
+
+                <section class="phone">
+                    <label for="user-phone">Phone:</label>
+                    <input type="tel" id="user-phone" placeholder="(nnn)-nnn-nnnn">
+                </section>
+
+                <fieldset>
+                    <legend>Favorite Rock Type:</legend>
+                    <select id="rock-type-select" name="rock-types">
+                        <option value="igneous" selected>Igneous</option>
+                        <option value="sedimentary">Sedimentary</option>
+                        <option value="metamorphic">Metamorphic</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interest in Geology:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="like" value="like" name="rock-interest">
+                            <label for="like">I like Geology!</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="dislike" value="dislike" name="rock-interest">
+                            <label for="dislike">I dislike Geology.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="interested" value="interested" name="rock-interest">
+                            <label for="interested">I would like to learn more about Geology!</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="uninterested" value="uninterested" name="rock-interest">
+                            <label for="uninterested">I wouldn't like to learn more about Geology.</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comments:</legend>
+                    <textarea cols="30" rows="7" placeholder="Enter comments here..."></textarea>
+                </fieldset>
+
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <div class="content">
+                <a href="#top" id="footer-link">Back to top</a>
+                <div class="footer-icons">
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                </div>
+                <h3 id="footer-cr">Rocks | Copyright &copy; 2020</h3>
+            </div>
+        </footer>
+    </body>
+</html>
