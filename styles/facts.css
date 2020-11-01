@@ -25,7 +25,7 @@ section {
 }
 
 section#igneous {
-    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/igneous.jpg);
+    background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/igneous.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -33,7 +33,7 @@ section#igneous {
 }
 
 section#sedimentary {
-    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/sedimentary.jpg);
+    background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/sedimentary.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -41,7 +41,7 @@ section#sedimentary {
 }
 
 section#metamorphic {
-    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/metamorphic.jpg);
+    background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/metamorphic.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
